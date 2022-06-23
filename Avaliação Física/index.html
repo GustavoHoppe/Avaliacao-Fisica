@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Física</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação Físca</h1>
+    </header>
+
+    <section id="form">
+        
+        <h1>Formulário</h1>
+        
+        <p>Nome
+            <input type="text" name="nome" id="nome">
+        </p>
+
+        <p>Idade:
+            <input type="number" name="idade" id="idade"> <label for="idade">anos</label>
+        </p>
+
+        <p>Altura:
+            <input type="number" name="alt" id="alt"> <label for="alt">m</label>
+        </p>
+
+        <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+    </section>
+    
+    <section id="parq">
+        <h1>ParQ</h1>
+        <p>Algum médico já disse que você possui algum problema de coração e que só deveria realizar atividade física supervisionado por profissionais de saúde? </p> 
+        <input type="radio" name="parq1" id="sim1" checked> <label for="sim1">Sim</label>
+        <input type="radio" name="parq1" id="nao1"> <label for="nao1">Não</label>
+
+        <p>Você sente dores no peito quando pratica atividade física?</p>
+        <input type="radio" name="parq2" id="sim2" checked> <label for="sim2">Sim</label>
+        <input type="radio" name="parq2" id="nao2"> <label for="nao2">Não</label>
+
+        <p>No último mês, você sentiu dores no peito quando praticou atividade física?</p>
+        <input type="radio" name="parq3" id="sim3" checked> <label for="sim3">Sim</label>
+        <input type="radio" name="parq3" id="nao3"> <label for="nao3">Não</label>
+
+        <p>Você apresenta desequilíbrio devido à tontura e/ ou perda de consciência?</p>
+        <input type="radio" name="parq4" id="sim4" checked> <label for="sim4">Sim</label>
+        <input type="radio" name="parq4" id="nao4"> <label for="nao4">Não</label>
+
+        <p>Você possui algum problema ósseo ou articular que poderia ser piorado pela atividade física?</p>
+        <input type="radio" name="parq5" id="sim5" checked> <label for="sim5">Sim</label>
+        <input type="radio" name="parq5" id="nao5"> <label for="nao5">Não</label>
+
+        <p>Você toma atualmente algum medicamento para pressão arterial e/ou problema de coração?</p>
+        <input type="radio" name="parq6" id="sim6" checked> <label for="sim6">Sim</label>
+        <input type="radio" name="parq6" id="nao6"> <label for="nao6">Não</label>
+
+        <p>Sabe de alguma outra razão pela qual você não deve praticar atividade física?</p>
+        <input type="radio" name="parq7" id="sim7" checked> <label for="sim7">Sim</label>
+        <input type="radio" name="parq7" id="nao7"> <label for="nao7">Não</label>
+
+    </section>
+    
+    <section id="ava1">
+        
+        <h1>Perimetria e composição corporal</h1>
+        
+        <div id="ava">
+
+            <div>
+                <p>Antebraço: <br>
+                    D <input type="number" name="antebraçoD" id="antebraço">  E <input type="number" name="antebraçoE" id="antebraçoE">
+                </p>
+
+                <p>Braço: <br>
+                    D <input type="number" name="braçoD" id="braço">  E <input type="number" name="braçoE" id="braçoE">
+                </p>
+
+                <p>Ombro: <br>
+                    <input type="number" name="ombro" id="ombro">
+                </p>
+
+                <p>Tórax/Busto: <br>
+                    <input type="number" name="torax" id="torax">
+                </p>
+
+                <p>Cintura: <br>
+                    <input type="number" name="cintura" id="cintura">
+                </p>
+
+                <p>Abdomem: <br>
+                    <input type="number" name="abd" id="abd">
+                </p>
+
+                <p>Quadril: <br>
+                    <input type="number" name="quad" id="quad">
+                </p>
+
+                <p>Coxa: <br>
+                    D <input type="number" name="pernaD" id="pernaD"> E <input type="number" name="pernaE" id="pernaE">
+                </p>
+
+                <p>Panturrilha: <br>
+                    D <input type="number" name="pantD" id="pantD"> E <input type="number" name="pantE" id="pantE">
+                </p>
+            </div>
+
+            <div> 
+                <p>Peso: <br>
+                    <input type="number" name="peso" id="peso">
+                </p>
+                
+                <p>IMC: <br>
+                    <input type="number" name="imc" id="imc"> <p class="res" id="resimc"></p>
+                </p>
+
+                <p>Gordura Corporal: <br>
+                    <input type="number" name="gord" id="gord"> <label for="gord">%</label> <p class="res" id="resgord"></p>
+                </p>
+
+                <p>Musculo esquelético: <br>
+                    <input type="number" name="musc" id="musc"> <label for="musc">%</label> <p class="res" id="resmusc"></p>
+                </p>
+
+                <p>Metabolismo basal: <br>
+                    <input type="number" name="met" id="met"> <label for="met">Kcal</label>
+                </p> 
+
+                <p>Idade Corporal: <br>
+                    <input type="number" name="idadec" id="idadec"> <label for="idadec">anos</label>
+                </p>
+
+                <p>Gordura visceral: <br>
+                    <input type="number" name="gordv" id="gordv"> <label for="gordv">%</label> <p class="res" id="resgordv"></p>
+                </p>
+
+
+            </div>
+        </div>
+
+    </section>
+        
+    <input type="button" value="Calcular" id="botao" onclick="calcular()">
+
+    <footer>
+        <p id="foot"> &copy; Gustavo Hoppe Workout</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
